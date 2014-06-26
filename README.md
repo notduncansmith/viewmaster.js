@@ -15,7 +15,6 @@ ViewMaster exposes a global object, `View`. ViewMaster needs a context to operat
 ```javascript
   
   View.context('#main');
-
 ```
 
 
@@ -26,7 +25,6 @@ Next we'll need some views.  The most effective way to store the views in the DO
   <script id="hello">
     <h1>Hello, world!</h1>
   </script>
-
 ```
 
 Now that we have a view, let's tell ViewMaster about it.  We do this with a call to `View.view()`, which takes the view name and a jQuery selector.  ViewMaster will query that selector, and take the HTML contents of the first matching element.
@@ -34,7 +32,6 @@ Now that we have a view, let's tell ViewMaster about it.  We do this with a call
 ```javascript
 
   View.view('hello', '#hello');
-
 ```
 
 Finally, it's time to go to a view!  We use `View.go()` to navigate the context to a view, passing in the view name (which we defined earlier), and optionally a transition name.  ViewMaster ships with a transition called `slideLeft`, so we'll use that.
@@ -42,15 +39,13 @@ Finally, it's time to go to a view!  We use `View.go()` to navigate the context 
 ```javascript
 
   View.go('hello', 'slideLeft');
-
 ```
 
 Note that we didn't actually have to pass in `slideLeft`, since it's the default transition.  That line could have been written simply as: 
 
-```
+```javascript
 
   View.go('hello');
-
 ```
 
 That's it!  Go build something cool.
