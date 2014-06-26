@@ -6,6 +6,10 @@
     "Duncan Smith <hello@duncanmsmith.com>"
   ],
   "description": "A tiny library for managing client-side views",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:notduncansmith/viewmaster.js.git"
+  },
   "moduleType": [
     "globals"
   ],
