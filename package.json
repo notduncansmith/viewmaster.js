@@ -1,0 +1,22 @@
+{
+  "name": "viewmaster",
+  "version": "0.0.0",
+  "description": "A tiny library for managing front-end views",
+  "main": "viewmaster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "manage",
+    "views",
+    "client",
+    "front-end"
+  ],
+  "author": "Duncan Smith",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-uglify": "~0.3.1",
+    "gulp": "~3.8.2",
+    "gulp-rename": "~1.2.0"
+  }
+}
