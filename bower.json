@@ -1,0 +1,27 @@
+{
+  "name": "viewmaster",
+  "main": "viewmaster.js",
+  "version": "0.0.0",
+  "authors": [
+    "Duncan Smith <hello@duncanmsmith.com>"
+  ],
+  "description": "A tiny library for managing client-side views",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "view",
+    "manager"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
