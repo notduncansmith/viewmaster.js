@@ -1,6 +1,6 @@
 # ViewMaster
 
-A tiny library for managing front-end views
+A tiny library for managing client-side views
 
 
 ## How it works
