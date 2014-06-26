@@ -1,7 +1,7 @@
 {
   "name": "viewmaster",
   "version": "0.0.0",
-  "description": "A tiny library for managing front-end views",
+  "description": "A tiny library for managing client-side views",
   "main": "viewmaster.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
