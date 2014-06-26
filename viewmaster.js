@@ -1,6 +1,6 @@
 // ViewMaster - A tiny library for managing client-side views 
 // Copyright Duncan Smith 2014
-var View = (function($){
+window.View = (function($){
   function View() {
     // Hold context, views, and transitions
     this._c = document; 
