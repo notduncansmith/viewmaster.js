@@ -56,7 +56,7 @@ window.View = (function($){
       
       var options = opts || {};
       
-      var newView = $.extend({}, defaults, options);
+      var newView = $.extend({}, options, defaults);
       this._v[viewName] = newView;
     }
     
