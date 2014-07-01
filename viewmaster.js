@@ -1,7 +1,7 @@
 // ViewMaster - A tiny library for managing client-side views 
 // Copyright Duncan Smith 2014
 window.View = (function($){
-  function View() {
+  function View (options) {
     // Hold context, views, and transitions
     this._c = document; 
     this._v = {};
@@ -12,7 +12,9 @@ window.View = (function($){
     
     this._currentView = '';
     this.defaultTransition = 'slideLeft';
-      
+    this.beforeView = function(){};
+    this.afterView = function(){};
+
     this.context = context.bind(this);
     this.view = view.bind(this);
     this.go = go.bind(this);
@@ -38,12 +40,18 @@ window.View = (function($){
         , transition = transitionName || this.defaultTransition
         , t = this._t[transition];
       
+      v.before();
+      this.beforeView();
       t(c, v.html);
+      this.afterView();
+      v.after();
     }
 
     function view (viewName, selector, opts) {
       var defaults = {
-        html: $(selector).html()
+        html: $(selector).html(),
+        before: function(){},
+        after: function(){}
       };
       
       var options = opts || {};
